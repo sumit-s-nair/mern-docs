@@ -11,7 +11,8 @@ const courseData = [
   { day: 3, title: "ReactJs", topics: 1 },
   { day: 4, title: "Tailwind CSS", topics: 1 },
   { day: 5, title: "NextJs", topics: 1 },
-  { day: 6, title: "MongoDB", topics: 1 },
+  { day: 6, title: "MongoDB", topics: 3 },
+  { day: 7, title: "NodeJs", topics: 5 },
 ]
 
 
@@ -115,7 +116,7 @@ export default function CoursePage() {
               ))}
             </div>
 
-            <div className="hover:cursor-pointer" onClick={() => window.open("https://github.com/sumit-s-nair/mern-docs", "_blank")}>
+            <div className="hover:cursor-pointer" onClick={() => window.open("https://github.com/sumit-s-nair/mern-docs/blob/main/contributions.md", "_blank")}>
               <Card
                 className="group relative overflow-hidden border border-border/60 bg-card/60 
                           transition-all duration-300 hover:-translate-y-1 hover:shadow-lg 

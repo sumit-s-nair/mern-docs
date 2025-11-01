@@ -13,22 +13,8 @@ To check what contents the doc currently covers go to [Course-Content](https://g
 We welcome contributions from everyone!
 
 To contribute:
-1. **Fork** this repository to your own GitHub account.
-2. **Clone** your fork locally:
-	```bash
-	git clone https://github.com/<your-username>/mern-docs.git
-	cd mern-docs
-	```
-3. **Create a new branch** for your feature or fix:
-	```bash
-	git checkout -b my-feature
-	```
-4. **Make your changes** and commit them with clear messages.
-5. **Push** your branch to your fork:
-	```bash
-	git push origin my-feature
-	```
-6. **Open a Pull Request** to the main repository. Please describe your changes and reference any related issues.
+
+Please go to [Contributions.md](https://github.com/sumit-s-nair/mern-docs/blob/main/contributions.md)
 
 Thank you for helping improve this project!
 
