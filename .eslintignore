@@ -6,4 +6,3 @@ build
 public
 package-lock.json
 .turbo
-pnpm-lock.yaml
