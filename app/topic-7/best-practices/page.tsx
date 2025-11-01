@@ -144,8 +144,8 @@ process.on('uncaughtException', (error) => {
           </div>
         </div>
 
-        <div className="bg-yellow-50 dark:bg-yellow-950/20 border border-yellow-200 dark:border-yellow-900 p-4 rounded-md mt-4">
-          <p className="text-sm font-semibold text-yellow-900 dark:text-yellow-300 mb-2">
+        <div className="bg-yellow-50 dark:bg-muted border border-yellow-200 dark:border-yellow-900 p-4 rounded-md mt-4">
+          <p className="text-sm font-semibold text-yellow-600 mb-2">
             Important
           </p>
           <p className="text-sm text-muted-foreground">
@@ -191,8 +191,8 @@ const apiKey = process.env.API_KEY;
 const port = process.env.PORT || 3000;`}
               showLineNumbers
             />
-            <div className="bg-red-50 dark:bg-red-950/20 border border-red-200 dark:border-red-900 p-3 rounded-md mt-3">
-              <p className="text-sm font-semibold text-red-900 dark:text-red-300 mb-2">
+            <div className="bg-red-50 dark:bg-red-800/20 border border-red-200 dark:border-red-800 p-3 rounded-md mt-3">
+              <p className="text-sm font-semibold text-red-500 mb-2">
                 Never commit .env files!
               </p>
               <p className="text-sm text-muted-foreground mb-2">
@@ -422,8 +422,8 @@ module.exports = router;`}
         </div>
       </LessonSection>
 
-      <div className="bg-blue-50 dark:bg-blue-950/20 border border-blue-200 dark:border-blue-900 p-4 rounded-md mt-8">
-        <p className="text-sm font-semibold text-blue-900 dark:text-blue-300 mb-2">
+      <div className="bg-blue-50 dark:bg-muted border border-blue-200 dark:border-blue-900 p-4 rounded-md mt-8">
+        <p className="text-sm font-semibold text-blue-500 mb-2">
           Ready to Build?
         </p>
         <p className="text-sm text-muted-foreground mb-3">
@@ -432,6 +432,7 @@ module.exports = router;`}
         <Button
           onClick={() => router.push('/topic-7/api-development')}
           size="sm"
+          className="bg-blue-500"
         >
           Next: API Development
         </Button>

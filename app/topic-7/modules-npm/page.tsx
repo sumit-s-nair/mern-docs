@@ -196,8 +196,8 @@ npm install express@latest`}
             <p className="text-sm text-muted-foreground mb-3">
               This folder contains all installed packages and their dependencies. It can be very large!
             </p>
-            <div className="bg-yellow-50 dark:bg-yellow-950/20 border border-yellow-200 dark:border-yellow-900 p-3 rounded-md">
-              <p className="text-sm font-semibold text-yellow-900 dark:text-yellow-300 mb-2">
+            <div className="bg-yellow-50 dark:bg-muted border border-yellow-200 dark:border-yellow-900 p-3 rounded-md">
+              <p className="text-sm font-semibold text-yellow-600 mb-2">
                 Important
               </p>
               <p className="text-sm text-muted-foreground mb-2">
@@ -325,8 +325,8 @@ logger.error('Something went wrong');
           />
         </div>
 
-        <div className="bg-green-50 dark:bg-green-950/20 border border-green-200 dark:border-green-900 p-4 rounded-md mt-4">
-          <p className="text-sm font-semibold text-green-900 dark:text-green-300 mb-2">
+        <div className="bg-green-50 dark:bg-green-300/20 border border-green-200 dark:border-green-900 p-4 rounded-md mt-4">
+          <p className="text-sm font-semibold text-green-600 mb-2">
             Recommended
           </p>
           <p className="text-sm text-muted-foreground">
@@ -335,8 +335,8 @@ logger.error('Something went wrong');
         </div>
       </LessonSection>
 
-      <div className="bg-blue-50 dark:bg-blue-950/20 border border-blue-200 dark:border-blue-900 p-4 rounded-md mt-8">
-        <p className="text-sm font-semibold text-blue-900 dark:text-blue-300 mb-2">
+      <div className="bg-blue-50 dark:bg-muted border border-blue-200 dark:border-blue-900 p-4 rounded-md mt-8">
+        <p className="text-sm font-semibold text-blue-500 mb-2">
           Ready for More?
         </p>
         <p className="text-sm text-muted-foreground mb-3">
@@ -345,6 +345,7 @@ logger.error('Something went wrong');
         <Button
           onClick={() => router.push('/topic-7/best-practices')}
           size="sm"
+          className="bg-blue-500"
         >
           Next: Best Practices
         </Button>

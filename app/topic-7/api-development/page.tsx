@@ -322,8 +322,8 @@ app.listen(PORT, () => {
           showLineNumbers
         />
 
-        <div className="bg-yellow-50 dark:bg-yellow-950/20 border border-yellow-200 dark:border-yellow-900 p-4 rounded-md mt-4">
-          <p className="text-sm font-semibold text-yellow-900 dark:text-yellow-300 mb-2">
+        <div className="bg-yellow-50 dark:bg-muted border border-yellow-200 dark:border-yellow-900 p-4 rounded-md mt-4">
+          <p className="text-sm font-semibold text-yellow-600 mb-2">
             Production Note
           </p>
           <p className="text-sm text-muted-foreground">
@@ -399,8 +399,8 @@ app.listen(PORT, () => {
         </div>
       </LessonSection>
 
-      <div className="bg-green-50 dark:bg-green-950/20 border border-green-200 dark:border-green-900 p-4 rounded-md mt-8">
-        <p className="text-sm font-semibold text-green-900 dark:text-green-300 mb-2">
+      <div className="bg-green-50 dark:bg-green-300/20 border border-green-200 dark:border-green-900 p-4 rounded-md mt-8">
+        <p className="text-sm font-semibold text-green-600 mb-2">
           Congratulations!
         </p>
         <p className="text-sm text-muted-foreground mb-3">
@@ -409,7 +409,7 @@ app.listen(PORT, () => {
         <div className="flex gap-2">
           <Button
             onClick={() => router.push('/topic-7')}
-            variant="outline"
+            variant="link"
             size="sm"
           >
             Back to Topics
@@ -417,6 +417,7 @@ app.listen(PORT, () => {
           <Button
             onClick={() => router.push('/')}
             size="sm"
+            className="bg-blue-500"
           >
             Go to Home
           </Button>

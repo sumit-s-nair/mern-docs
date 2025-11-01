@@ -78,11 +78,11 @@ console.log('Third');
           Even though <code>setTimeout</code> has a delay of 0ms, &quot;Second&quot; is printed last because the callback is placed in the event queue and executed after the current call stack is empty.
         </p>
 
-        <div className="bg-yellow-50 dark:bg-yellow-950/20 border border-yellow-200 dark:border-yellow-900 p-4 rounded-md">
-          <p className="text-sm font-semibold text-yellow-900 dark:text-yellow-300 mb-2">
+        <div className="bg-yellow-50 dark:bg-muted border border-yellow-200 dark:border-yellow-900 p-4 rounded-md">
+          <p className="text-sm font-semibold text-yellow-600  mb-2">
             Event Loop Phases
           </p>
-          <ul className="list-disc pl-5 text-sm text-muted-foreground space-y-1">
+          <ul className="list-disc pl-5 text-sm dark:text-muted-foreground space-y-1">
             <li><strong>Timers:</strong> Executes callbacks scheduled by setTimeout() and setInterval()</li>
             <li><strong>Pending callbacks:</strong> Executes I/O callbacks deferred to the next loop iteration</li>
             <li><strong>Poll:</strong> Retrieves new I/O events</li>
@@ -131,8 +131,8 @@ console.log('Reading file...');
           showLineNumbers
         />
 
-        <div className="bg-yellow-50 dark:bg-yellow-950/20 border border-yellow-200 dark:border-yellow-900 p-4 rounded-md mt-4">
-          <p className="text-sm font-semibold text-yellow-900 dark:text-yellow-300 mb-2">
+        <div className="bg-yellow-50 dark:bg-muted border border-yellow-200 dark:border-yellow-900 p-4 rounded-md mt-4">
+          <p className="text-sm font-semibold text-yellow-600 mb-2">
             Callback Hell
           </p>
           <p className="text-sm text-muted-foreground mb-2">
@@ -232,8 +232,8 @@ readFiles();`}
           showLineNumbers
         />
 
-        <div className="bg-green-50 dark:bg-green-950/20 border border-green-200 dark:border-green-900 p-4 rounded-md mt-4 mb-4">
-          <p className="text-sm font-semibold text-green-900 dark:text-green-300 mb-2">
+        <div className="bg-green-50 dark:bg-green-600/20 border border-green-200 dark:border-green-900 p-4 rounded-md mt-4 mb-4">
+          <p className="text-sm font-semibold text-green-600  mb-2">
             Best Practice
           </p>
           <p className="text-sm text-muted-foreground">
@@ -362,8 +362,8 @@ const events = require('events');   // Event emitter`}
           </div>
         </div>
 
-        <div className="bg-blue-50 dark:bg-blue-950/20 border border-blue-200 dark:border-blue-900 p-4 rounded-md mt-4">
-          <p className="text-sm font-semibold text-blue-900 dark:text-blue-300 mb-2">
+        <div className="bg-blue-50 dark:bg-muted border border-blue-200 dark:border-blue-900 p-4 rounded-md mt-4">
+          <p className="text-sm font-semibold text-blue-500 mb-2">
             Next Steps
           </p>
           <p className="text-sm text-muted-foreground mb-3">
@@ -372,6 +372,7 @@ const events = require('events');   // Event emitter`}
           <Button
             onClick={() => router.push('/topic-7/modules-npm')}
             size="sm"
+            className="font-bold bg-blue-500"
           >
             Next: Modules & NPM
           </Button>
