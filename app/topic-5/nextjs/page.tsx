@@ -1,20 +1,19 @@
-'use client'
+"use client";
 
-import { LessonLayout } from "@/components/lesson/lesson-layout"
-import { LessonSection } from "@/components/lesson/lesson-section"
-import { CodeBlock } from "@/components/lesson/code-block"
-import { PreviewCard } from "@/components/lesson/preview-card"
-import { Button } from "@/components/ui/button"
-import { useRouter } from "next/navigation"
-import { ArrowLeft } from "lucide-react"
+import { LessonLayout } from "@/components/lesson/lesson-layout";
+import { LessonSection } from "@/components/lesson/lesson-section";
+import { CodeBlock } from "@/components/lesson/code-block";
+import { Button } from "@/components/ui/button";
+import { useRouter } from "next/navigation";
+import { ArrowLeft } from "lucide-react";
 
 export default function NextLessonPage() {
-  const router = useRouter()
+  const router = useRouter();
 
   return (
     <LessonLayout
       title="Next.js Essentials"
-      intro="Next.js is a React framework for building fast, scalable, and production-ready web applications. You’ll learn about routing, data fetching, server and client components, API routes, and optimization techniques for modern full-stack development."
+      intro="Next.js is a React framework for building fast, scalable, and production-ready web applications. You will learn about routing, data fetching, server and client components, API routes, and optimization techniques for modern full-stack development."
       toc={[
         { href: "#routing", label: "File-Based Routing" },
         { href: "#data-fetching", label: "Data Fetching (SSR & SSG)" },
@@ -28,7 +27,7 @@ export default function NextLessonPage() {
         <Button
           variant="ghost"
           size="sm"
-          onClick={() => router.push('/topic-3')}
+          onClick={() => router.push("/topic-3")}
           className="flex items-center gap-2"
         >
           <ArrowLeft className="h-4 w-4" />
@@ -39,7 +38,9 @@ export default function NextLessonPage() {
       {/* ---------- Section 1: File-Based Routing ---------- */}
       <LessonSection id="routing" title="File-Based Routing">
         <p className="text-muted-foreground mb-3">
-          Next.js automatically creates routes based on your folder structure inside the <code>app</code> or <code>pages</code> directory. Each file corresponds to a route, making navigation intuitive and simple.
+          Next.js automatically creates routes based on your folder structure
+          inside the <code>app</code> or <code>pages</code> directory. Each file
+          corresponds to a route, making navigation intuitive and simple.
         </p>
 
         <CodeBlock
@@ -72,7 +73,10 @@ export default function BlogPost({ params }) {
       {/* ---------- Section 2: Data Fetching (SSR & SSG) ---------- */}
       <LessonSection id="data-fetching" title="Data Fetching (SSR & SSG)">
         <p className="text-muted-foreground mb-3">
-          Next.js supports multiple data fetching strategies: Static Site Generation (SSG), Server-Side Rendering (SSR), and Client-Side Fetching. This flexibility allows you to balance performance and freshness.
+          Next.js supports multiple data fetching strategies: Static Site
+          Generation (SSG), Server-Side Rendering (SSR), and Client-Side
+          Fetching. This flexibility allows you to balance performance and
+          freshness.
         </p>
 
         <CodeBlock
@@ -114,7 +118,9 @@ export default async function HomePage() {
       {/* ---------- Section 3: Client & Server Components ---------- */}
       <LessonSection id="client-server" title="Client & Server Components">
         <p className="text-muted-foreground mb-3">
-          In Next.js 13+, components are Server Components by default. You can opt into Client Components by adding the <code>'use client'</code> directive. Use Client Components for interactivity and hooks.
+          In Next.js 13+, components are Server Components by default. You can
+          opt into Client Components by adding the <code>use client</code>
+          directive. Use Client Components for interactivity and hooks.
         </p>
 
         <CodeBlock
@@ -156,7 +162,9 @@ export default function Home() {
       {/* ---------- Section 4: API Routes & Serverless Functions ---------- */}
       <LessonSection id="api-routes" title="API Routes & Serverless Functions">
         <p className="text-muted-foreground mb-3">
-          API routes let you build backend functionality directly inside your Next.js app. These run as serverless functions, perfect for handling form submissions, fetching data, or processing requests.
+          API routes let you build backend functionality directly inside your
+          Next.js app. These run as serverless functions, perfect for handling
+          form submissions, fetching data, or processing requests.
         </p>
 
         <CodeBlock
@@ -179,7 +187,9 @@ export default async function ApiExample() {
       {/* ---------- Section 5: Performance & Optimization ---------- */}
       <LessonSection id="optimization" title="Performance & Optimization">
         <p className="text-muted-foreground">
-          Next.js offers built-in optimization for images, scripts, and fonts. Use the <code>next/image</code> and <code>next/font</code> components to automatically improve performance.
+          Next.js offers built-in optimization for images, scripts, and fonts.
+          Use the <code>next/image</code> and <code>next/font</code> components
+          to automatically improve performance.
         </p>
 
         <CodeBlock
@@ -208,5 +218,5 @@ export default function OptimizedPage() {
         />
       </LessonSection>
     </LessonLayout>
-  )
+  );
 }

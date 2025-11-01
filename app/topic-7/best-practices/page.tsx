@@ -4,7 +4,7 @@ import { LessonLayout } from "@/components/lesson/lesson-layout"
 import { LessonSection } from "@/components/lesson/lesson-section"
 import { CodeBlock } from "@/components/lesson/code-block"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { useRouter } from "next/navigation"
 import { ArrowLeft, Shield, Zap, FileCode, Settings } from "lucide-react"
 

@@ -3,7 +3,6 @@
 import { LessonLayout } from "@/components/lesson/lesson-layout"
 import { LessonSection } from "@/components/lesson/lesson-section"
 import { CodeBlock } from "@/components/lesson/code-block"
-import { PreviewCard } from "@/components/lesson/preview-card"
 import { Button } from "@/components/ui/button"
 import { useRouter } from "next/navigation"
 import { ArrowLeft } from "lucide-react"
