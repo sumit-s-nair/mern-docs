@@ -1,16 +1,10 @@
-/** @type {import('postcss-load-config').Config} */
-const config = {
-  darkMode: "class",
-   content: [
-    "./app/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
-  ],
-  theme: {
-    extend: {},
-  },
+/**
+ * PostCSS configuration — only include PostCSS-compatible fields here.
+ * Tailwind-specific config (content, theme, etc.) belongs in `tailwind.config.mjs`.
+ */
+export default {
   plugins: {
     '@tailwindcss/postcss': {},
+    autoprefixer: {},
   },
 }
-
-export default config

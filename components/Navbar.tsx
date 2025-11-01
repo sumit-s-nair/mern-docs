@@ -1,13 +1,12 @@
 "use client"
 
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
+// Button removed — not used in Navbar
 import { ThemeToggle } from "@/components/theme-toggle"
-import { usePathname } from "next/navigation"
-import { cn } from "@/lib/utils"
+// usePathname and cn removed — not used
 
 export default function Navbar() {
-  const pathname = usePathname()
+  // pathname intentionally unused in this simple navbar
 
   return (
     <header className="sticky top-0 z-40 w-full border-b bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
