@@ -6,12 +6,13 @@ Thank you for your interest in contributing. Please follow the steps below to en
 - Review the [Issues](../../issues) tab to see ongoing or pending work.  
 - Comment on an issue you'd like to work on, or create a new one if needed.
 
-## 2. Fork the 'dev' branch of the Repository 
-- Click **Fork** in the 'dev' branch and make your changes in a new branch.  
+## 2. Fork the Repository 
+- Click **Fork** and make your changes in the 'dev' branch.  
 - Keep commits small, clear, and logically grouped.
 
 ## 3. Pull Request Message Format
 When creating a pull request, use the following format in your description:
+**All pull requests must be to the 'dev' branch**
 
 Title: [Fix/Add/Update] <feature or file name>
 
