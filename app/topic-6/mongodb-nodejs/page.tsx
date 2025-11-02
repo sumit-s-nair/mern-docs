@@ -23,22 +23,23 @@ export default function MongoDBNodeJSPage() {
         { href: "#best-practices", label: "Best Practices" },
       ]}
     >
-      <div className="mb-4 flex flex-row gap-2">
+      <div className="mb-4 flex flex-wrap gap-2 items-center">
         <Button
           variant="ghost"
           size="sm"
           onClick={() => router.push('/topic-6')}
-          className="flex items-center gap-2"
+          className="flex items-center gap-1.5 text-xs sm:text-sm shrink-0"
         >
-          <ArrowLeft className="h-4 w-4" />
-          Back to Topic 6
+          <ArrowLeft className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
+          <span className="whitespace-nowrap">Back to Topic 6</span>
         </Button>
         <Button
           variant="outline"
           size="sm"
           onClick={() => router.push('/topic-6/mongodb-basics')}
+          className="text-xs sm:text-sm shrink-0"
         >
-          MongoDB Basics
+          <span className="whitespace-nowrap">MongoDB Basics</span>
         </Button>
       </div>
 
@@ -805,19 +806,19 @@ const posts = await Post.find()
         </div>
       </LessonSection>
 
-      <div className="mt-8 p-6 bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-950/20 dark:to-blue-950/20 border border-green-200 dark:border-green-900 rounded-lg">
-        <h3 className="text-lg font-semibold mb-2">You&apos;ve Mastered MongoDB!</h3>
-        <p className="text-muted-foreground mb-4">
+      <div className="mt-8 p-4 sm:p-6 bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-950/20 dark:to-blue-950/20 border border-green-200 dark:border-green-900 rounded-lg overflow-hidden">
+        <h3 className="text-base sm:text-lg font-semibold mb-2 break-words">You&apos;ve Mastered MongoDB!</h3>
+        <p className="text-muted-foreground mb-4 text-sm sm:text-base break-words">
           Congratulations! You now know how to:
         </p>
-        <ul className="list-disc pl-5 text-sm text-muted-foreground space-y-1 mb-4">
-          <li>Use MongoDB with Node.js and Mongoose</li>
-          <li>Design efficient schemas</li>
-          <li>Create indexes for better performance</li>
-          <li>Use aggregation for data analysis</li>
-          <li>Follow best practices for production apps</li>
+        <ul className="list-disc pl-4 sm:pl-5 text-xs sm:text-sm text-muted-foreground space-y-1 mb-4">
+          <li className="break-words">Use MongoDB with Node.js and Mongoose</li>
+          <li className="break-words">Design efficient schemas</li>
+          <li className="break-words">Create indexes for better performance</li>
+          <li className="break-words">Use aggregation for data analysis</li>
+          <li className="break-words">Follow best practices for production apps</li>
         </ul>
-        <p className="text-sm text-muted-foreground">
+        <p className="text-xs sm:text-sm text-muted-foreground break-words">
           Now you&apos;re ready to build real applications with MongoDB! Practice by building projects like a blog, todo app, or e-commerce store.
         </p>
       </div>

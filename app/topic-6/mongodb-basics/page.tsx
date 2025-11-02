@@ -24,29 +24,31 @@ export default function MongoDBBasicsPage() {
         { href: "#delete", label: "Deleting Data (Delete)" },
       ]}
     >
-      <div className="mb-4 flex flex-row gap-2">
+      <div className="mb-4 flex flex-wrap gap-2 items-center">
         <Button
           variant="ghost"
           size="sm"
           onClick={() => router.push('/topic-6')}
-          className="flex items-center gap-2"
+          className="flex items-center gap-1.5 text-xs sm:text-sm shrink-0"
         >
-          <ArrowLeft className="h-4 w-4" />
-          Back to Topic 6
+          <ArrowLeft className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
+          <span className="whitespace-nowrap">Back to Topic 6</span>
         </Button>
         <Button
           variant="outline"
           size="sm"
           onClick={() => router.push('/topic-6/mongodb-setup')}
+          className="text-xs sm:text-sm shrink-0"
         >
-          MongoDB Setup
+          <span className="whitespace-nowrap">MongoDB Setup</span>
         </Button>
         <Button
           variant="outline"
           size="sm"
           onClick={() => router.push('/topic-6/mongodb-nodejs')}
+          className="text-xs sm:text-sm shrink-0"
         >
-          MongoDB with Node.js
+          <span className="whitespace-nowrap">MongoDB with Node.js</span>
         </Button>
       </div>
 
@@ -831,19 +833,20 @@ show dbs  // Database won't appear anymore`}
         </div>
       </LessonSection>
 
-      <div className="mt-8 p-6 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-950/20 dark:to-purple-950/20 border border-blue-200 dark:border-blue-900 rounded-lg">
-        <h3 className="text-lg font-semibold mb-2">Congratulations!</h3>
-        <p className="text-muted-foreground mb-4">
+      <div className="mt-8 p-4 sm:p-6 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-950/20 dark:to-purple-950/20 border border-blue-200 dark:border-blue-900 rounded-lg overflow-hidden">
+        <h3 className="text-base sm:text-lg font-semibold mb-2 break-words">Congratulations!</h3>
+        <p className="text-muted-foreground mb-4 text-sm sm:text-base break-words">
           You&apos;ve learned the fundamentals of MongoDB and CRUD operations! You can now create databases, add data, search for it, update it, and delete it.
         </p>
-        <p className="text-sm text-muted-foreground mb-4">
+        <p className="text-xs sm:text-sm text-muted-foreground mb-4 break-words">
           Next, learn how to use MongoDB in your Node.js applications with the MongoDB driver and Mongoose!
         </p>
         <Button
           onClick={() => router.push('/topic-6/mongodb-nodejs')}
-          size="lg"
+          size="sm"
+          className="text-xs sm:text-sm md:text-base w-full sm:w-auto"
         >
-          Continue to MongoDB with Node.js →
+          <span className="whitespace-nowrap">Continue to MongoDB with Node.js →</span>
         </Button>
       </div>
     </LessonLayout>

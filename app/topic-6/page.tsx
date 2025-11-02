@@ -29,27 +29,27 @@ export default function HomePage() {
   const router = useRouter()
 
   return (
-    <main>
+    <main className="overflow-x-hidden">
       <Button
             variant="ghost"
             size="sm"
             onClick={() => router.push('/')}
-            className="flex items-center gap- m-4"
+            className="flex items-center gap-1.5 m-3 sm:m-4 text-xs sm:text-sm shrink-0"
           >
-            <ArrowLeft className="h-4 w-4" />
-            Home
+            <ArrowLeft className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
+            <span className="whitespace-nowrap">Home</span>
           </Button>
-      <section className="container mx-auto max-w-5xl px-4 py-12 md:py-16">
-        <div className="flex flex-col gap-6">
-          <h1 className="text-pretty text-4xl font-semibold tracking-tight md:text-5xl">Learn MongoDB Essentials</h1>
-          <p className="text-muted-foreground max-w-2xl leading-relaxed">
+      <section className="container mx-auto max-w-5xl px-3 sm:px-4 py-8 sm:py-12 md:py-16">
+        <div className="flex flex-col gap-4 sm:gap-6">
+          <h1 className="text-pretty text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight break-words">Learn MongoDB Essentials</h1>
+          <p className="text-muted-foreground max-w-2xl leading-relaxed text-sm sm:text-base break-words">
             Master MongoDB from scratch — learn setup, CRUD operations, indexing, aggregation pipelines, schema design, and deployment best practices. Hands-on examples with both the native MongoDB driver and Mongoose ODM.
           </p>
         </div>
       </section>
 
-      <section className="container mx-auto max-w-5xl px-4 pb-16">
-        <div className="grid gap-6 md:grid-cols-2">
+      <section className="container mx-auto max-w-5xl px-3 sm:px-4 pb-12 sm:pb-16">
+        <div className="grid gap-4 sm:gap-6 md:grid-cols-2">
           {topics.map((t) => (
             <Link
               key={t.title}
@@ -76,21 +76,21 @@ export default function HomePage() {
                   </CardDescription>
                 </CardHeader>
 
-                <CardContent className="text-sm">
-                  <ul className="list-disc pl-5 leading-7 marker:text-primary/70 text-muted-foreground group-hover:text-foreground transition-colors">
+                <CardContent className="text-xs sm:text-sm">
+                  <ul className="list-disc pl-4 sm:pl-5 leading-6 sm:leading-7 marker:text-primary/70 text-muted-foreground group-hover:text-foreground transition-colors">
                     {t.points.map((p) => (
-                      <li key={p}>{p}</li>
+                      <li key={p} className="break-words">{p}</li>
                     ))}
                   </ul>
 
-                  <div className="mt-4">
+                  <div className="mt-3 sm:mt-4">
                     <Button
                       asChild
                       size="sm"
                       variant="outline"
-                      className="transition-all duration-200 hover:bg-primary hover:text-primary-foreground"
+                      className="transition-all duration-200 hover:bg-primary hover:text-primary-foreground text-xs sm:text-sm"
                     >
-                      <span>Open lesson</span>
+                      <span className="whitespace-nowrap">Open lesson</span>
                     </Button>
                   </div>
                 </CardContent>

@@ -21,15 +21,15 @@ export default function MongoDBSetupPage() {
         { href: "#verify", label: "Verify Installation" },
       ]}
     >
-      <div className="mb-4 flex flex-row gap-8">
+      <div className="mb-4 flex flex-wrap gap-2 items-center">
         <Button
           variant="ghost"
           size="sm"
           onClick={() => router.push('/topic-6')}
-          className="flex items-center gap-2"
+          className="flex items-center gap-1.5 text-xs sm:text-sm shrink-0"
         >
-          <ArrowLeft className="h-4 w-4" />
-          Back to MongoDB Lesson
+          <ArrowLeft className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
+          <span className="whitespace-nowrap">Back to Topic 6</span>
         </Button>
       </div>
 
@@ -97,7 +97,7 @@ export default function MongoDBSetupPage() {
           <div className="bg-muted/50 p-4 rounded-md">
             <p className="font-semibold mb-3">Step 1: Download MongoDB Community Server</p>
             <ol className="list-decimal pl-5 text-sm text-muted-foreground space-y-1">
-              <li>Visit <a href="https://www.mongodb.com/try/download/community" target="_blank" className="text-primary underline">mongodb.com/try/download/community</a></li>
+              <li className="break-words">Visit <a href="https://www.mongodb.com/try/download/community" target="_blank" className="text-primary underline break-all">mongodb.com/try/download/community</a></li>
               <li>Select the latest stable version (7.0 or higher)</li>
               <li>Choose your operating system</li>
               <li>Download the installer</li>
@@ -215,7 +215,7 @@ sudo systemctl enable mongod`}
           <div className="bg-muted/50 p-4 rounded-md">
             <p className="font-semibold mb-2">Step 1: Create an Account</p>
             <ol className="list-decimal pl-5 text-sm text-muted-foreground space-y-1">
-              <li>Go to <a href="https://cloud.mongodb.com" target="_blank" className="text-primary underline">cloud.mongodb.com</a></li>
+              <li className="break-words">Go to <a href="https://cloud.mongodb.com" target="_blank" className="text-primary underline break-all">cloud.mongodb.com</a></li>
               <li>Click &quot;Sign Up&quot;</li>
               <li>Sign up with email or use Google/GitHub</li>
               <li>Verify your email if required</li>
@@ -376,19 +376,19 @@ db.test.find()
           </div>
         </div>
 
-        <div className="bg-blue-50 dark:bg-blue-950/20 border border-blue-200 dark:border-blue-900 p-4 rounded-md mt-4">
-          <p className="text-sm font-semibold text-blue-900 dark:text-blue-300 mb-2">
+        <div className="bg-blue-50 dark:bg-blue-950/20 border border-blue-200 dark:border-blue-900 p-3 sm:p-4 rounded-md mt-4 overflow-hidden">
+          <p className="text-xs sm:text-sm font-semibold text-blue-900 dark:text-blue-300 mb-2 break-words">
             All Set!
           </p>
-          <p className="text-sm text-muted-foreground">
+          <p className="text-xs sm:text-sm text-muted-foreground break-words">
             Now proceed to the MongoDB Basics lesson to start learning how to use MongoDB!
           </p>
           <Button
             onClick={() => router.push('/topic-6/mongodb-basics')}
-            className="mt-3"
+            className="mt-3 text-xs sm:text-sm"
             size="sm"
           >
-            Next: MongoDB Basics & CRUD
+            <span className="whitespace-nowrap">Next: MongoDB Basics & CRUD</span>
           </Button>
         </div>
       </LessonSection>
