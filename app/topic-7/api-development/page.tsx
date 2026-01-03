@@ -389,7 +389,7 @@ app.listen(PORT, () => {
             Postman is a popular API testing tool with a graphical interface:
           </p>
           <ol className="list-decimal pl-5 text-sm text-muted-foreground space-y-1">
-            <li>Download Postman from <a href="https://www.postman.com" target="_blank" className="text-primary underline">postman.com</a></li>
+            <li>Download Postman from <a href="https://www.postman.com" target="_blank" rel="noopener noreferrer" className="text-primary underline">postman.com</a></li>
             <li>Create a new request</li>
             <li>Set the HTTP method (GET, POST, PUT, DELETE)</li>
             <li>Enter the URL (e.g., http://localhost:3000/api/users)</li>

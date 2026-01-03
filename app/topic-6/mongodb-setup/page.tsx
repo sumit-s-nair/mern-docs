@@ -1,14 +1,14 @@
-'use client'
+"use client";
 
-import { LessonLayout } from "@/components/lesson/lesson-layout"
-import { LessonSection } from "@/components/lesson/lesson-section"
-import { CodeBlock } from "@/components/lesson/code-block"
-import { Button } from "@/components/ui/button"
-import { useRouter } from "next/navigation"
-import { ArrowLeft } from "lucide-react"
+import { LessonLayout } from "@/components/lesson/lesson-layout";
+import { LessonSection } from "@/components/lesson/lesson-section";
+import { CodeBlock } from "@/components/lesson/code-block";
+import { Button } from "@/components/ui/button";
+import { useRouter } from "next/navigation";
+import { ArrowLeft } from "lucide-react";
 
 export default function MongoDBSetupPage() {
-  const router = useRouter()
+  const router = useRouter();
 
   return (
     <LessonLayout
@@ -25,7 +25,7 @@ export default function MongoDBSetupPage() {
         <Button
           variant="ghost"
           size="sm"
-          onClick={() => router.push('/topic-6')}
+          onClick={() => router.push("/topic-6")}
           className="flex items-center gap-2"
         >
           <ArrowLeft className="h-4 w-4" />
@@ -59,7 +59,9 @@ export default function MongoDBSetupPage() {
           </div>
 
           <div className="bg-green-50 dark:bg-green-950/20 border border-green-200 dark:border-green-900 p-4 rounded-md">
-            <p className="font-semibold mb-2">Option 2: MongoDB Atlas (Cloud)</p>
+            <p className="font-semibold mb-2">
+              Option 2: MongoDB Atlas (Cloud)
+            </p>
             <p className="text-sm text-muted-foreground mb-3">
               Use MongoDB in the cloud (free tier available)
             </p>
@@ -83,7 +85,9 @@ export default function MongoDBSetupPage() {
             Recommendation for Beginners
           </p>
           <p className="text-sm text-muted-foreground">
-            Start with <strong>MongoDB Atlas (Cloud)</strong> - it&apos;s easier and gets you up and running in 5 minutes. You can always install locally later if needed!
+            Start with <strong>MongoDB Atlas (Cloud)</strong> - it&apos;s easier
+            and gets you up and running in 5 minutes. You can always install
+            locally later if needed!
           </p>
         </div>
       </LessonSection>
@@ -95,9 +99,21 @@ export default function MongoDBSetupPage() {
 
         <div className="space-y-6">
           <div className="bg-muted/50 p-4 rounded-md">
-            <p className="font-semibold mb-3">Step 1: Download MongoDB Community Server</p>
+            <p className="font-semibold mb-3">
+              Step 1: Download MongoDB Community Server
+            </p>
             <ol className="list-decimal pl-5 text-sm text-muted-foreground space-y-1">
-              <li>Visit <a href="https://www.mongodb.com/try/download/community" target="_blank" className="text-primary underline">mongodb.com/try/download/community</a></li>
+              <li>
+                Visit{" "}
+                <a
+                  href="https://www.mongodb.com/try/download/community"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary underline"
+                >
+                  mongodb.com/try/download/community
+                </a>
+              </li>
               <li>Select the latest stable version (7.0 or higher)</li>
               <li>Choose your operating system</li>
               <li>Download the installer</li>
@@ -106,7 +122,7 @@ export default function MongoDBSetupPage() {
 
           <div className="bg-muted/50 p-4 rounded-md">
             <p className="font-semibold mb-3">Step 2: Install MongoDB</p>
-            
+
             <div className="space-y-4">
               <div>
                 <p className="font-semibold mb-2">Windows Installation:</p>
@@ -114,13 +130,21 @@ export default function MongoDBSetupPage() {
                   <li>Double-click the downloaded MSI file</li>
                   <li>Click &quot;Next&quot; on the welcome screen</li>
                   <li>Accept the license agreement</li>
-                  <li>Choose <strong>&quot;Complete&quot;</strong> installation</li>
+                  <li>
+                    Choose <strong>&quot;Complete&quot;</strong> installation
+                  </li>
                   <li>
                     <strong>Service Configuration Screen:</strong>
                     <ul className="list-disc pl-5 mt-1 space-y-1">
-                      <li>✓ Keep &quot;Install MongoDB as a Service&quot; checked</li>
-                      <li>✓ Select &quot;Run service as Network Service user&quot;</li>
-                      <li>Service Name: <code>MongoDB</code></li>
+                      <li>
+                        ✓ Keep &quot;Install MongoDB as a Service&quot; checked
+                      </li>
+                      <li>
+                        ✓ Select &quot;Run service as Network Service user&quot;
+                      </li>
+                      <li>
+                        Service Name: <code>MongoDB</code>
+                      </li>
                       <li>Data Directory: Keep default</li>
                       <li>Log Directory: Keep default</li>
                       <li>Click &quot;Next&quot;</li>
@@ -142,12 +166,20 @@ export default function MongoDBSetupPage() {
                     Adding MongoDB to PATH (Windows)
                   </p>
                   <ol className="list-decimal pl-5 text-sm text-muted-foreground space-y-1">
-                    <li>Search for &quot;Environment Variables&quot; in Windows</li>
-                    <li>Click &quot;Edit the system environment variables&quot;</li>
+                    <li>
+                      Search for &quot;Environment Variables&quot; in Windows
+                    </li>
+                    <li>
+                      Click &quot;Edit the system environment variables&quot;
+                    </li>
                     <li>Click &quot;Environment Variables&quot; button</li>
-                    <li>Under &quot;System variables&quot;, find and select <strong>Path</strong></li>
+                    <li>
+                      Under &quot;System variables&quot;, find and select{" "}
+                      <strong>Path</strong>
+                    </li>
                     <li>Click &quot;Edit&quot;</li>
-                    <li>Click &quot;New&quot; and add:
+                    <li>
+                      Click &quot;New&quot; and add:
                       <CodeBlock
                         language="text"
                         code={`C:\\Program Files\\MongoDB\\Server\\7.0\\bin`}
@@ -161,7 +193,9 @@ export default function MongoDBSetupPage() {
 
               <div>
                 <p className="font-semibold mb-2">macOS Installation:</p>
-                <p className="text-sm text-muted-foreground mb-2">Using Homebrew (easiest method):</p>
+                <p className="text-sm text-muted-foreground mb-2">
+                  Using Homebrew (easiest method):
+                </p>
                 <CodeBlock
                   language="bash"
                   code={`# Install Homebrew if you don't have it
@@ -215,7 +249,17 @@ sudo systemctl enable mongod`}
           <div className="bg-muted/50 p-4 rounded-md">
             <p className="font-semibold mb-2">Step 1: Create an Account</p>
             <ol className="list-decimal pl-5 text-sm text-muted-foreground space-y-1">
-              <li>Go to <a href="https://cloud.mongodb.com" target="_blank" className="text-primary underline">cloud.mongodb.com</a></li>
+              <li>
+                Go to{" "}
+                <a
+                  href="https://cloud.mongodb.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary underline"
+                >
+                  cloud.mongodb.com
+                </a>
+              </li>
               <li>Click &quot;Sign Up&quot;</li>
               <li>Sign up with email or use Google/GitHub</li>
               <li>Verify your email if required</li>
@@ -226,7 +270,9 @@ sudo systemctl enable mongod`}
             <p className="font-semibold mb-2">Step 2: Create a Free Cluster</p>
             <ol className="list-decimal pl-5 text-sm text-muted-foreground space-y-2">
               <li>After logging in, click &quot;Build a Database&quot;</li>
-              <li>Select <strong>M0 FREE</strong> tier (512MB storage)</li>
+              <li>
+                Select <strong>M0 FREE</strong> tier (512MB storage)
+              </li>
               <li>Choose a cloud provider (AWS, Google Cloud, or Azure)</li>
               <li>Select a region close to you</li>
               <li>Name your cluster (or keep default &quot;Cluster0&quot;)</li>
@@ -243,9 +289,15 @@ sudo systemctl enable mongod`}
               <li>
                 <strong>Create Database User:</strong>
                 <ul className="list-disc pl-5 mt-1">
-                  <li>Username: <code>myuser</code> (or your choice)</li>
-                  <li>Password: Click &quot;Autogenerate Secure Password&quot;</li>
-                  <li><strong>SAVE THIS PASSWORD!</strong> Copy it somewhere safe</li>
+                  <li>
+                    Username: <code>myuser</code> (or your choice)
+                  </li>
+                  <li>
+                    Password: Click &quot;Autogenerate Secure Password&quot;
+                  </li>
+                  <li>
+                    <strong>SAVE THIS PASSWORD!</strong> Copy it somewhere safe
+                  </li>
                   <li>Click &quot;Create User&quot;</li>
                 </ul>
               </li>
@@ -254,7 +306,10 @@ sudo systemctl enable mongod`}
                 <ul className="list-disc pl-5 mt-1">
                   <li>Choose &quot;My Local Environment&quot;</li>
                   <li>Click &quot;Add My Current IP Address&quot;</li>
-                  <li>Or click &quot;Allow Access from Anywhere&quot; (0.0.0.0/0) for learning</li>
+                  <li>
+                    Or click &quot;Allow Access from Anywhere&quot; (0.0.0.0/0)
+                    for learning
+                  </li>
                   <li>Click &quot;Finish and Close&quot;</li>
                 </ul>
               </li>
@@ -266,14 +321,27 @@ sudo systemctl enable mongod`}
               What if I see &quot;Service Config&quot; screen?
             </p>
             <p className="text-sm text-muted-foreground mb-2">
-              Sometimes after clicking &quot;Finish and Close&quot;, you might see additional options:
+              Sometimes after clicking &quot;Finish and Close&quot;, you might
+              see additional options:
             </p>
             <ul className="list-disc pl-5 text-sm text-muted-foreground space-y-1">
-              <li><strong>Deployment Type:</strong> Leave as &quot;Cluster&quot;</li>
-              <li><strong>Cloud Provider & Region:</strong> Already set</li>
-              <li><strong>Cluster Tier:</strong> Should show &quot;M0 Sandbox (Free)&quot;</li>
-              <li><strong>Additional Settings:</strong> Leave everything as default</li>
-              <li>Just click &quot;Create Cluster&quot; or &quot;Confirm&quot;</li>
+              <li>
+                <strong>Deployment Type:</strong> Leave as &quot;Cluster&quot;
+              </li>
+              <li>
+                <strong>Cloud Provider & Region:</strong> Already set
+              </li>
+              <li>
+                <strong>Cluster Tier:</strong> Should show &quot;M0 Sandbox
+                (Free)&quot;
+              </li>
+              <li>
+                <strong>Additional Settings:</strong> Leave everything as
+                default
+              </li>
+              <li>
+                Just click &quot;Create Cluster&quot; or &quot;Confirm&quot;
+              </li>
             </ul>
             <p className="text-sm text-muted-foreground mt-2">
               Wait 3-5 minutes for your cluster to deploy.
@@ -281,15 +349,22 @@ sudo systemctl enable mongod`}
           </div>
 
           <div className="bg-muted/50 p-4 rounded-md">
-            <p className="font-semibold mb-2">Step 4: Get Your Connection String</p>
+            <p className="font-semibold mb-2">
+              Step 4: Get Your Connection String
+            </p>
             <ol className="list-decimal pl-5 text-sm text-muted-foreground space-y-1">
               <li>Once cluster is ready, click &quot;Connect&quot; button</li>
               <li>Select &quot;Connect your application&quot;</li>
               <li>Driver: Choose &quot;Node.js&quot;</li>
               <li>Version: Select latest</li>
               <li>Copy the connection string</li>
-              <li>Replace <code>&lt;password&gt;</code> with your actual password</li>
-              <li>Replace <code>myFirstDatabase</code> with your database name (e.g., <code>schoolDB</code>)</li>
+              <li>
+                Replace <code>&lt;password&gt;</code> with your actual password
+              </li>
+              <li>
+                Replace <code>myFirstDatabase</code> with your database name
+                (e.g., <code>schoolDB</code>)
+              </li>
             </ol>
             <p className="text-sm text-muted-foreground mt-2">
               Example connection string:
@@ -306,7 +381,8 @@ sudo systemctl enable mongod`}
             Success!
           </p>
           <p className="text-sm text-muted-foreground">
-            Your MongoDB Atlas cluster is ready! You can now connect to it from your applications using the connection string.
+            Your MongoDB Atlas cluster is ready! You can now connect to it from
+            your applications using the connection string.
           </p>
         </div>
       </LessonSection>
@@ -334,7 +410,8 @@ mongosh
 # test>`}
             />
             <p className="text-sm text-muted-foreground mt-2">
-              If you see the MongoDB shell prompt, congratulations! MongoDB is installed correctly.
+              If you see the MongoDB shell prompt, congratulations! MongoDB is
+              installed correctly.
             </p>
           </div>
 
@@ -381,10 +458,11 @@ db.test.find()
             All Set!
           </p>
           <p className="text-sm text-muted-foreground">
-            Now proceed to the MongoDB Basics lesson to start learning how to use MongoDB!
+            Now proceed to the MongoDB Basics lesson to start learning how to
+            use MongoDB!
           </p>
           <Button
-            onClick={() => router.push('/topic-6/mongodb-basics')}
+            onClick={() => router.push("/topic-6/mongodb-basics")}
             className="mt-3"
             size="sm"
           >
@@ -393,5 +471,5 @@ db.test.find()
         </div>
       </LessonSection>
     </LessonLayout>
-  )
+  );
 }

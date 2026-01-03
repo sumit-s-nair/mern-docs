@@ -1,6 +1,0 @@
-# robots.txt for MERN Docs
-User-agent: *
-Allow: /
-
-# Sitemaps
-Sitemap: https://mern-docs.vercel.app/sitemap.xml

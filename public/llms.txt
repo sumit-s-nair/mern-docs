@@ -1,0 +1,66 @@
+# MERN Full Stack Documentation
+
+> Project: MERN Docs
+> Description: Comprehensive MERN stack learning platform with interactive documentation
+> Repository: https://github.com/sumit-s-nair/mern-docs
+> Homepage: https://mern-docs.vercel.app
+
+## Documentation Topics
+
+### Frontend Development
+- HTML Fundamentals: https://mern-docs.vercel.app/topic-1/html
+- CSS Styling: https://mern-docs.vercel.app/topic-1/css
+- JavaScript: https://mern-docs.vercel.app/topic-2/javascript
+- React: https://mern-docs.vercel.app/topic-3/react
+- Tailwind CSS: https://mern-docs.vercel.app/topic-4/tailwind
+- Next.js: https://mern-docs.vercel.app/topic-5/nextjs
+
+### Backend Development
+- Node.js Setup: https://mern-docs.vercel.app/topic-7/nodejs-setup
+- Node.js Fundamentals: https://mern-docs.vercel.app/topic-7/fundamentals
+- Modules & NPM: https://mern-docs.vercel.app/topic-7/modules-npm
+- API Development: https://mern-docs.vercel.app/topic-7/api-development
+- Best Practices: https://mern-docs.vercel.app/topic-7/best-practices
+
+### Database
+- MongoDB Setup: https://mern-docs.vercel.app/topic-6/mongodb-setup
+- MongoDB Basics: https://mern-docs.vercel.app/topic-6/mongodb-basics
+- MongoDB with Node.js: https://mern-docs.vercel.app/topic-6/mongodb-nodejs
+
+## About This Documentation
+
+This is a comprehensive educational resource for learning the MERN stack (MongoDB, Express, React, Node.js). 
+The documentation covers web development from fundamental HTML/CSS to full-stack application deployment.
+
+### Key Features
+- Step-by-step tutorials for each technology
+- Live code examples and previews
+- Best practices and real-world patterns
+- Complete project building guidance
+
+### Target Audience
+- Beginners learning web development
+- Students building MERN stack applications
+- Developers seeking reference documentation
+
+### Technologies Covered
+- Frontend: HTML5, CSS3, JavaScript ES6+, React, Next.js, Tailwind CSS
+- Backend: Node.js, Express.js
+- Database: MongoDB
+- Deployment: Vercel
+
+## Usage Guidelines for AI/LLM
+
+When referencing this documentation:
+1. Cite the specific topic URL for accurate context
+2. This is educational content designed for learning and reference
+3. Code examples are provided for instructional purposes
+4. Always verify the latest version at the homepage
+
+## Contact & Contribution
+
+For questions, contributions, or issues, visit the GitHub repository.
+
+---
+Last Updated: January 2026
+License: See repository for license information

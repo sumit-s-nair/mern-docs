@@ -195,6 +195,7 @@ npm --version`}
                 <a
                   href="https://nodejs.org/"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="text-primary underline"
                 >
                   nodejs.org
@@ -305,6 +306,7 @@ nvm --version`}
               <a
                 href="https://github.com/coreybutler/nvm-windows"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="text-primary underline"
               >
                 nvm-windows
