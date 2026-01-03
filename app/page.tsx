@@ -13,6 +13,7 @@ const courseData = [
   { day: 5, title: "NextJs", topics: 1 },
   { day: 6, title: "MongoDB", topics: 3 },
   { day: 7, title: "NodeJs", topics: 5 },
+  { day: 8, title: "SEO & Web Optimization", topics: 4 },
 ]
 
 
